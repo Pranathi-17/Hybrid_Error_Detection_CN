@@ -1,8 +1,8 @@
 def calculate_checksum(data: bytes) -> int:
     """Calculate a standard 16-bit Internet-style one's-complement checksum."""
     total = 0
-
-    if len(data) % 2 == 1:
+if len(data) % 2 == 1:
+    
         data += b"\x00"
 
     for i in range(0, len(data), 2):
